@@ -1,0 +1,847 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>콘텐츠 | 파도세무회계</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<style>
+
+body{margin:0;font-family:"Noto Sans KR","Apple SD Gothic Neo",sans-serif;background:#f5f5f7;color:#1d1d1f;-webkit-font-smoothing:antialiased;word-break:keep-all;overflow-wrap:break-word;line-break:strict}
+h1,h2,h3{text-wrap:balance}
+p,li,label{text-wrap:pretty}
+a{color:#2743a8;text-decoration:none}a:hover{color:#1c2c7a;text-decoration:underline}
+button{font-family:inherit}
+.c-card:hover .c-thumb img{transform:scale(1.04)}
+.c-thumb img{transition:transform .5s ease}
+.c-card:hover h3{text-decoration:underline;text-underline-offset:4px}
+.c-grid>a:nth-child(3n+2){transition-delay:.12s}
+.c-grid>a:nth-child(3n){transition-delay:.24s}
+
+.rv{opacity:0;transform:translateY(70px);transition:opacity .9s ease,transform 1s cubic-bezier(.16,.84,.3,1)}
+.rv-l{transform:translateX(-120px)}.rv-r{transform:translateX(120px)}.rv-z{transform:scale(.88)}
+.rv-d1{transition-delay:.15s}.rv-d2{transition-delay:.3s}
+.rv.rv-in{opacity:1;transform:none}
+@media (prefers-reduced-motion:reduce){.rv{opacity:1;transform:none;transition:none}}
+
+
+body{display:flex;justify-content:center;background:#e8e8ed}
+.rv{opacity:1;transform:none}
+</style>
+</head>
+<body>
+<div style="position: relative; width: 1440px; height: 8550px; display: flex; flex-direction: column; background: #f5f5f7; color: #1d1d1f; font-family: 'Noto Sans KR', sans-serif; overflow: hidden;">
+
+<!-- QUICK LINKS (floating) -->
+<div style="position: absolute; top: 420px; right: 24px; bottom: 24px; width: 72px; z-index: 40; pointer-events: none;">
+<nav aria-label="빠른 링크" style="position: sticky; top: 140px; display: flex; flex-direction: column; gap: 10px; pointer-events: auto;">
+<a href="tel:070-4118-9949" style="width: 72px; box-sizing: border-box; padding: 14px 0 12px; border-radius: 18px; background: #ffffff; border: 1px solid #e3e3e8; box-shadow: 0 6px 20px rgba(0,0,0,0.08); display: flex; flex-direction: column; align-items: center; gap: 8px; color: #1d1d1f; text-decoration: none;">
+<span style="font-size: 11px; font-weight: 700; color: #1c2c7a;">상담문의</span>
+<span style="width: 36px; height: 36px; border-radius: 50%; background: #1c2c7a; display: flex; align-items: center; justify-content: center;">
+<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 14v-2a8 8 0 0 1 16 0v2"></path><rect x="3" y="14" width="4" height="6" rx="1.5"></rect><rect x="17" y="14" width="4" height="6" rx="1.5"></rect></svg>
+</span>
+<span style="font-size: 14px; line-height: 1.25; font-weight: 800; text-align: center; letter-spacing: -0.01em;">070<br>4118<br>9949</span>
+</a>
+<a href="#c-top" aria-label="맨 위로" style="width: 72px; height: 64px; border-radius: 18px; background: #6e6e73; color: #ffffff; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 2px; text-decoration: none; box-shadow: 0 6px 20px rgba(0,0,0,0.08);">
+<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 19V5M6 11l6-6 6 6"></path></svg>
+<span style="font-size: 12px; font-weight: 800;">TOP</span>
+</a>
+</nav>
+</div>
+
+
+
+<!-- GNB -->
+<header style="height: 52px; flex-shrink: 0; display: flex; align-items: center; justify-content: space-between; padding: 0 120px; background: rgba(251,251,253,0.94); border-bottom: 1px solid #e3e3e8; box-sizing: border-box;">
+<a href="index.html" style="display: flex; align-items: center; gap: 10px; color: #1d1d1f; text-decoration: none;">
+<img src="images/pado-mark.png" alt="파도세무회계 로고" style="height: 30px; width: auto; display: block;">
+<span style="font-size: 17px; font-weight: 700; letter-spacing: -0.02em;">파도세무회계</span>
+</a>
+<nav aria-label="주 메뉴" style="height: 52px; display: flex; align-items: stretch; gap: 44px; font-size: 14px;">
+<a href="index.html" style="display: flex; align-items: center; gap: 4px; color: #1d1d1f;">사무소 소개<svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"></path></svg></a>
+<a href="services.html" style="display: flex; align-items: center; color: #1d1d1f;">업무 분야</a>
+<a href="index.html" style="display: flex; align-items: center; color: #1d1d1f;">상담 프로세스</a>
+<a href="contents.html" aria-current="page" style="display: flex; align-items: center; color: #1d1d1f; font-weight: 700; box-shadow: inset 0 -2px 0 #1d1d1f;">콘텐츠</a>
+<a href="index.html" style="display: flex; align-items: center; color: #1d1d1f;">자주 묻는 질문</a>
+</nav>
+<div style="display: flex; align-items: center; gap: 20px;">
+<a href="tel:070-4118-9949" style="font-size: 13px; color: #1d1d1f;">070-4118-9949</a>
+<a href="index.html" style="height: 34px; padding: 0 18px; border-radius: 980px; background: #1c2c7a; color: #ffffff; font-size: 13px; font-weight: 500; display: flex; align-items: center; text-decoration: none;">상담 신청</a>
+</div>
+</header>
+
+<!-- PAGE HERO -->
+<section id="c-top" style="padding: 88px 120px 56px; display: flex; flex-direction: column; align-items: center; gap: 16px; text-align: center;">
+<div class="rv" style="font-size: 13px; font-weight: 700; letter-spacing: 0.12em; color: #1c2c7a;">PADO TAX INSIGHT</div>
+<h1 class="rv" style="margin: 0; font-size: 56px; line-height: 1.15; font-weight: 800; letter-spacing: -0.035em;">콘텐츠</h1>
+<p class="rv rv-d1" style="margin: 0; font-size: 19px; line-height: 1.7; color: #424245;">대표님께 꼭 필요한 세무 정보, 꾸준히 전해드립니다.<br>두 대표 세무사가 블로그와 유튜브로 직접 정리한 글과 영상을 모았습니다.</p>
+</section>
+
+<!-- FEATURED -->
+<section style="padding: 0 120px 88px;">
+<a href="https://blog.naver.com/vtwlu302/224418804912" class="c-card rv" style="display: flex; align-items: center; gap: 56px; color: #1d1d1f; text-decoration: none;">
+<div class="c-thumb" style="width: 600px; height: 360px; flex-shrink: 0; border-radius: 24px; overflow: hidden; background: #3b4161; display: flex; align-items: center; justify-content: center; box-shadow: 0 8px 30px rgba(0,0,0,0.08);">
+<img src="images/b-appraisal.jpg" alt="" style="height: 100%; width: auto; display: block;">
+</div>
+<div style="display: flex; flex-direction: column; gap: 16px;">
+<div style="display: flex; gap: 8px;"><span style="padding: 6px 14px; border-radius: 980px; background: #eceef8; color: #1c2c7a; font-size: 13px; font-weight: 700;">추천</span><span style="padding: 6px 14px; border-radius: 980px; background: #ffffff; border: 1px solid #e3e3e8; font-size: 13px; font-weight: 500; color: #424245;">상속·증여</span></div>
+<h2 style="margin: 0; font-size: 32px; line-height: 1.35; font-weight: 800; letter-spacing: -0.03em;">부동산을 감정평가로 신고하려면? 감정기관 수, 평가기간, 기준금액, 시가불인정</h2>
+<div style="display: flex; align-items: center; gap: 8px; font-size: 15px; color: #6e6e73;"><span style="width: 8px; height: 8px; border-radius: 50%; background: #03c75a;"></span>신창언 세무사 · 네이버 블로그 · 2026.09.22</div>
+<span style="margin-top: 8px; font-size: 16px; font-weight: 500; color: #2743a8;">글 읽기 ›</span>
+</div>
+</a>
+</section>
+
+<!-- CATEGORY TABS (sticky) -->
+<div style="position: sticky; top: 0; z-index: 25; background: rgba(245,245,247,0.94); border-bottom: 1px solid #d2d2d7;">
+<div role="tablist" aria-label="콘텐츠 분류" style="margin: 0 120px; display: grid; grid-template-columns: repeat(7, minmax(0, 1fr));">
+
+<button type="button" role="tab" aria-selected="true" style="height: 64px; border: none; background: none; cursor: pointer; font-size: 16px; font-weight: 800; color: #1c2c7a; box-shadow: inset 0 -3px 0 #1c2c7a;">전체<span style="margin-left: 6px; font-size: 13px; font-weight: 500; color: #86868b;">46</span></button>
+
+<button type="button" role="tab" aria-selected="false" style="height: 64px; border: none; background: none; cursor: pointer; font-size: 16px; font-weight: 600; color: #1d1d1f; box-shadow: none;">부동산 세금<span style="margin-left: 6px; font-size: 13px; font-weight: 500; color: #86868b;">14</span></button>
+
+<button type="button" role="tab" aria-selected="false" style="height: 64px; border: none; background: none; cursor: pointer; font-size: 16px; font-weight: 600; color: #1d1d1f; box-shadow: none;">재개발·입주권<span style="margin-left: 6px; font-size: 13px; font-weight: 500; color: #86868b;">9</span></button>
+
+<button type="button" role="tab" aria-selected="false" style="height: 64px; border: none; background: none; cursor: pointer; font-size: 16px; font-weight: 600; color: #1d1d1f; box-shadow: none;">상속·증여<span style="margin-left: 6px; font-size: 13px; font-weight: 500; color: #86868b;">6</span></button>
+
+<button type="button" role="tab" aria-selected="false" style="height: 64px; border: none; background: none; cursor: pointer; font-size: 16px; font-weight: 600; color: #1d1d1f; box-shadow: none;">사업자·법인<span style="margin-left: 6px; font-size: 13px; font-weight: 500; color: #86868b;">15</span></button>
+
+<button type="button" role="tab" aria-selected="false" style="height: 64px; border: none; background: none; cursor: pointer; font-size: 16px; font-weight: 600; color: #1d1d1f; box-shadow: none;">비거주자<span style="margin-left: 6px; font-size: 13px; font-weight: 500; color: #86868b;">2</span></button>
+
+<button type="button" role="tab" aria-selected="false" style="height: 64px; border: none; background: none; cursor: pointer; font-size: 16px; font-weight: 600; color: #1d1d1f; box-shadow: none;">유튜브<span style="margin-left: 6px; font-size: 13px; font-weight: 500; color: #86868b;">26</span></button>
+
+</div>
+</div>
+
+<!-- GRID -->
+<section style="padding: 56px 120px 120px;">
+<div class="c-grid" style="display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 56px 32px;">
+
+<a href="https://blog.naver.com/vtwlu302/224417958220" class="c-card rv" style="display: flex; flex-direction: column; gap: 18px; color: #1d1d1f; text-decoration: none;">
+<div class="c-thumb" style="position: relative; height: 230px; border-radius: 20px; overflow: hidden; background: #3b4161; display: flex; align-items: center; justify-content: center;">
+<img src="images/b-notice.jpg" alt="" style="height: 100%; width: auto; display: block;">
+
+
+
+</div>
+<div style="display: flex; flex-wrap: wrap; gap: 6px;">
+<span style="padding: 5px 12px; border-radius: 980px; background: #e8e8ed; font-size: 13px; font-weight: 500; color: #424245;">상속·증여</span>
+<span style="padding: 5px 12px; border-radius: 980px; background: #ffffff; border: 1px solid #e3e3e8; font-size: 13px; font-weight: 700; color: #03863f;">BLOG</span>
+</div>
+<h3 style="margin: 0; font-size: 21px; line-height: 1.45; font-weight: 700; letter-spacing: -0.02em;">상속세 신고 후 감정평가 통지, 공시지가 신고를 국세청이 뒤집는 이유</h3>
+<div style="font-size: 14px; color: #6e6e73;">신창언 세무사 · 네이버 블로그 · 2026.09.21</div>
+</a>
+
+<a href="https://blog.naver.com/notax_nolife/224418289429" class="c-card rv" style="display: flex; flex-direction: column; gap: 18px; color: #1d1d1f; text-decoration: none;">
+<div class="c-thumb" style="position: relative; height: 230px; border-radius: 20px; overflow: hidden; background: #c1d3e1; display: flex; align-items: center; justify-content: center;">
+<img src="images/b-overseas.jpg" alt="" style="height: 100%; width: auto; display: block;">
+
+
+
+</div>
+<div style="display: flex; flex-wrap: wrap; gap: 6px;">
+<span style="padding: 5px 12px; border-radius: 980px; background: #e8e8ed; font-size: 13px; font-weight: 500; color: #424245;">비거주자</span>
+<span style="padding: 5px 12px; border-radius: 980px; background: #ffffff; border: 1px solid #e3e3e8; font-size: 13px; font-weight: 700; color: #03863f;">BLOG</span>
+</div>
+<h3 style="margin: 0; font-size: 21px; line-height: 1.45; font-weight: 700; letter-spacing: -0.02em;">해외거주자 양도세, 한국 집 팔아도 양도세 안 낼 수 있을까?</h3>
+<div style="font-size: 14px; color: #6e6e73;">이지훈 세무사 · 네이버 블로그 · 2026.09.21</div>
+</a>
+
+<a href="https://blog.naver.com/notax_nolife/224415623387" class="c-card rv" style="display: flex; flex-direction: column; gap: 18px; color: #1d1d1f; text-decoration: none;">
+<div class="c-thumb" style="position: relative; height: 230px; border-radius: 20px; overflow: hidden; background: #a39a91; display: flex; align-items: center; justify-content: center;">
+<img src="images/b-youtuber.jpg" alt="" style="height: 100%; width: auto; display: block;">
+
+
+
+</div>
+<div style="display: flex; flex-wrap: wrap; gap: 6px;">
+<span style="padding: 5px 12px; border-radius: 980px; background: #e8e8ed; font-size: 13px; font-weight: 500; color: #424245;">사업자·법인</span>
+<span style="padding: 5px 12px; border-radius: 980px; background: #ffffff; border: 1px solid #e3e3e8; font-size: 13px; font-weight: 700; color: #03863f;">BLOG</span>
+</div>
+<h3 style="margin: 0; font-size: 21px; line-height: 1.45; font-weight: 700; letter-spacing: -0.02em;">유튜버 부가세, 간이과세자보다 일반과세자가 유리한 이유</h3>
+<div style="font-size: 14px; color: #6e6e73;">이지훈 세무사 · 네이버 블로그 · 2026.09.18</div>
+</a>
+
+<a href="https://blog.naver.com/vtwlu302/224416249385" class="c-card rv" style="display: flex; flex-direction: column; gap: 18px; color: #1d1d1f; text-decoration: none;">
+<div class="c-thumb" style="position: relative; height: 230px; border-radius: 20px; overflow: hidden; background: #3b4161; display: flex; align-items: center; justify-content: center;">
+<img src="images/b-farmland.jpg" alt="" style="height: 100%; width: auto; display: block;">
+
+
+
+</div>
+<div style="display: flex; flex-wrap: wrap; gap: 6px;">
+<span style="padding: 5px 12px; border-radius: 980px; background: #e8e8ed; font-size: 13px; font-weight: 500; color: #424245;">부동산 세금</span>
+<span style="padding: 5px 12px; border-radius: 980px; background: #ffffff; border: 1px solid #e3e3e8; font-size: 13px; font-weight: 700; color: #03863f;">BLOG</span>
+</div>
+<h3 style="margin: 0; font-size: 21px; line-height: 1.45; font-weight: 700; letter-spacing: -0.02em;">상속농지 양도세, 8년 자경감면 아버지 경작기간을 합산받는 두 가지 길</h3>
+<div style="font-size: 14px; color: #6e6e73;">신창언 세무사 · 네이버 블로그 · 2026.09.18</div>
+</a>
+
+<a href="https://blog.naver.com/vtwlu302/224415115857" class="c-card rv" style="display: flex; flex-direction: column; gap: 18px; color: #1d1d1f; text-decoration: none;">
+<div class="c-thumb" style="position: relative; height: 230px; border-radius: 20px; overflow: hidden; background: #c2b8b1; display: flex; align-items: center; justify-content: center;">
+<img src="images/n7.jpg" alt="" style="height: 100%; width: auto; display: block;">
+
+
+
+</div>
+<div style="display: flex; flex-wrap: wrap; gap: 6px;">
+<span style="padding: 5px 12px; border-radius: 980px; background: #e8e8ed; font-size: 13px; font-weight: 500; color: #424245;">사업자·법인</span>
+<span style="padding: 5px 12px; border-radius: 980px; background: #ffffff; border: 1px solid #e3e3e8; font-size: 13px; font-weight: 700; color: #03863f;">BLOG</span>
+</div>
+<h3 style="margin: 0; font-size: 21px; line-height: 1.45; font-weight: 700; letter-spacing: -0.02em;">유튜버 창업감면, 1인 미디어 면세사업자로 내셨더라도 되돌릴 수 있습니다</h3>
+<div style="font-size: 14px; color: #6e6e73;">신창언 세무사 · 네이버 블로그 · 2026.09.17</div>
+</a>
+
+<a href="https://blog.naver.com/vtwlu302/224414055133" class="c-card rv" style="display: flex; flex-direction: column; gap: 18px; color: #1d1d1f; text-decoration: none;">
+<div class="c-thumb" style="position: relative; height: 230px; border-radius: 20px; overflow: hidden; background: #7d9bb6; display: flex; align-items: center; justify-content: center;">
+<img src="images/n8.jpg" alt="" style="height: 100%; width: auto; display: block;">
+
+
+
+</div>
+<div style="display: flex; flex-wrap: wrap; gap: 6px;">
+<span style="padding: 5px 12px; border-radius: 980px; background: #e8e8ed; font-size: 13px; font-weight: 500; color: #424245;">재개발·입주권</span>
+<span style="padding: 5px 12px; border-radius: 980px; background: #ffffff; border: 1px solid #e3e3e8; font-size: 13px; font-weight: 700; color: #03863f;">BLOG</span>
+</div>
+<h3 style="margin: 0; font-size: 21px; line-height: 1.45; font-weight: 700; letter-spacing: -0.02em;">조합원입주권 저가매매로 비과세, 부담부증여보다 세금이 적게 나온 상담 사례</h3>
+<div style="font-size: 14px; color: #6e6e73;">신창언 세무사 · 네이버 블로그 · 2026.09.16</div>
+</a>
+
+<a href="https://blog.naver.com/vtwlu302/224411234531" class="c-card rv" style="display: flex; flex-direction: column; gap: 18px; color: #1d1d1f; text-decoration: none;">
+<div class="c-thumb" style="position: relative; height: 230px; border-radius: 20px; overflow: hidden; background: #c2b8b1; display: flex; align-items: center; justify-content: center;">
+<img src="images/n9.jpg" alt="" style="height: 100%; width: auto; display: block;">
+
+
+
+</div>
+<div style="display: flex; flex-wrap: wrap; gap: 6px;">
+<span style="padding: 5px 12px; border-radius: 980px; background: #e8e8ed; font-size: 13px; font-weight: 500; color: #424245;">사업자·법인</span>
+<span style="padding: 5px 12px; border-radius: 980px; background: #ffffff; border: 1px solid #e3e3e8; font-size: 13px; font-weight: 700; color: #03863f;">BLOG</span>
+</div>
+<h3 style="margin: 0; font-size: 21px; line-height: 1.45; font-weight: 700; letter-spacing: -0.02em;">무인사진관 세무사, 창업감면 대신 무엇을 챙겨야 하나요?</h3>
+<div style="font-size: 14px; color: #6e6e73;">신창언 세무사 · 네이버 블로그 · 2026.09.14</div>
+</a>
+
+<a href="https://blog.naver.com/vtwlu302/224407224421" class="c-card rv" style="display: flex; flex-direction: column; gap: 18px; color: #1d1d1f; text-decoration: none;">
+<div class="c-thumb" style="position: relative; height: 230px; border-radius: 20px; overflow: hidden; background: #c2b8b1; display: flex; align-items: center; justify-content: center;">
+<img src="images/n10.jpg" alt="" style="height: 100%; width: auto; display: block;">
+
+
+
+</div>
+<div style="display: flex; flex-wrap: wrap; gap: 6px;">
+<span style="padding: 5px 12px; border-radius: 980px; background: #e8e8ed; font-size: 13px; font-weight: 500; color: #424245;">사업자·법인</span>
+<span style="padding: 5px 12px; border-radius: 980px; background: #ffffff; border: 1px solid #e3e3e8; font-size: 13px; font-weight: 700; color: #03863f;">BLOG</span>
+</div>
+<h3 style="margin: 0; font-size: 21px; line-height: 1.45; font-weight: 700; letter-spacing: -0.02em;">약국 전문 세무 기장, 조제매출과 백마진 사이에서 놓치기 쉬운 것들</h3>
+<div style="font-size: 14px; color: #6e6e73;">신창언 세무사 · 네이버 블로그 · 2026.09.10</div>
+</a>
+
+<a href="https://blog.naver.com/notax_nolife/224368763285" class="c-card rv" style="display: flex; flex-direction: column; gap: 18px; color: #1d1d1f; text-decoration: none;">
+<div class="c-thumb" style="position: relative; height: 230px; border-radius: 20px; overflow: hidden; background: #293d63; display: flex; align-items: center; justify-content: center;">
+<img src="images/n1.jpg" alt="" style="height: 100%; width: auto; display: block;">
+
+
+
+</div>
+<div style="display: flex; flex-wrap: wrap; gap: 6px;">
+<span style="padding: 5px 12px; border-radius: 980px; background: #e8e8ed; font-size: 13px; font-weight: 500; color: #424245;">부동산 세금</span>
+<span style="padding: 5px 12px; border-radius: 980px; background: #ffffff; border: 1px solid #e3e3e8; font-size: 13px; font-weight: 700; color: #03863f;">BLOG</span>
+</div>
+<h3 style="margin: 0; font-size: 21px; line-height: 1.45; font-weight: 700; letter-spacing: -0.02em;">양도세 개정 총정리! 2028년부터 부동산 세금이 크게 달라집니다</h3>
+<div style="font-size: 14px; color: #6e6e73;">이지훈 세무사 · 네이버 블로그 · 2026.08.05</div>
+</a>
+
+<a href="https://www.youtube.com/watch?v=-5BxpFjV6d4" class="c-card rv" style="display: flex; flex-direction: column; gap: 18px; color: #1d1d1f; text-decoration: none;">
+<div class="c-thumb" style="position: relative; height: 230px; border-radius: 20px; overflow: hidden; background: #111827; display: flex; align-items: center; justify-content: center;">
+<img src="images/yt_-5BxpFjV6d4.jpg" alt="" style="width: 100%; height: 100%; object-fit: cover; display: block;">
+
+
+<span style="position: absolute; right: 14px; bottom: 14px; width: 48px; height: 34px; border-radius: 10px; background: rgba(255,0,0,0.94); display: flex; align-items: center; justify-content: center;"><svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5v14l11-7z" fill="#ffffff"></path></svg></span>
+</div>
+<div style="display: flex; flex-wrap: wrap; gap: 6px;">
+<span style="padding: 5px 12px; border-radius: 980px; background: #e8e8ed; font-size: 13px; font-weight: 500; color: #424245;">재개발·입주권</span>
+<span style="padding: 5px 12px; border-radius: 980px; background: #ffffff; border: 1px solid #e3e3e8; font-size: 13px; font-weight: 700; color: #cc0000;">YOUTUBE</span>
+</div>
+<h3 style="margin: 0; font-size: 21px; line-height: 1.45; font-weight: 700; letter-spacing: -0.02em;">입주권 증여, 이렇게 하면 800만원 줄일 수 있습니다</h3>
+<div style="font-size: 14px; color: #6e6e73;">이지훈 세무사 · 유튜브 · 2026.08.05</div>
+</a>
+
+<a href="https://blog.naver.com/notax_nolife/224366314928" class="c-card rv" style="display: flex; flex-direction: column; gap: 18px; color: #1d1d1f; text-decoration: none;">
+<div class="c-thumb" style="position: relative; height: 230px; border-radius: 20px; overflow: hidden; background: #a39a91; display: flex; align-items: center; justify-content: center;">
+<img src="images/n2.jpg" alt="" style="height: 100%; width: auto; display: block;">
+
+
+
+</div>
+<div style="display: flex; flex-wrap: wrap; gap: 6px;">
+<span style="padding: 5px 12px; border-radius: 980px; background: #e8e8ed; font-size: 13px; font-weight: 500; color: #424245;">사업자·법인</span>
+<span style="padding: 5px 12px; border-radius: 980px; background: #ffffff; border: 1px solid #e3e3e8; font-size: 13px; font-weight: 700; color: #03863f;">BLOG</span>
+</div>
+<h3 style="margin: 0; font-size: 21px; line-height: 1.45; font-weight: 700; letter-spacing: -0.02em;">아이템베이 세금, 사업자등록부터 종합소득세까지 꼭 알아야 할 6가지</h3>
+<div style="font-size: 14px; color: #6e6e73;">이지훈 세무사 · 네이버 블로그 · 2026.08.03</div>
+</a>
+
+<a href="https://blog.naver.com/notax_nolife/224366288212" class="c-card rv" style="display: flex; flex-direction: column; gap: 18px; color: #1d1d1f; text-decoration: none;">
+<div class="c-thumb" style="position: relative; height: 230px; border-radius: 20px; overflow: hidden; background: #4c6aa2; display: flex; align-items: center; justify-content: center;">
+<img src="images/n3.jpg" alt="" style="height: 100%; width: auto; display: block;">
+
+
+
+</div>
+<div style="display: flex; flex-wrap: wrap; gap: 6px;">
+<span style="padding: 5px 12px; border-radius: 980px; background: #e8e8ed; font-size: 13px; font-weight: 500; color: #424245;">재개발·입주권</span>
+<span style="padding: 5px 12px; border-radius: 980px; background: #ffffff; border: 1px solid #e3e3e8; font-size: 13px; font-weight: 700; color: #03863f;">BLOG</span>
+</div>
+<h3 style="margin: 0; font-size: 21px; line-height: 1.45; font-weight: 700; letter-spacing: -0.02em;">부산 촉진3구역 재개발 사업단계 총정리! 관리처분계획인가 이후 양도세·증여세 절세방법</h3>
+<div style="font-size: 14px; color: #6e6e73;">이지훈 세무사 · 네이버 블로그 · 2026.08.03</div>
+</a>
+
+<a href="https://blog.naver.com/notax_nolife/224363518751" class="c-card rv" style="display: flex; flex-direction: column; gap: 18px; color: #1d1d1f; text-decoration: none;">
+<div class="c-thumb" style="position: relative; height: 230px; border-radius: 20px; overflow: hidden; background: #f3efe6; display: flex; align-items: center; justify-content: center;">
+<img src="images/n4.jpg" alt="" style="height: 100%; width: auto; display: block;">
+
+
+
+</div>
+<div style="display: flex; flex-wrap: wrap; gap: 6px;">
+<span style="padding: 5px 12px; border-radius: 980px; background: #e8e8ed; font-size: 13px; font-weight: 500; color: #424245;">재개발·입주권</span>
+<span style="padding: 5px 12px; border-radius: 980px; background: #ffffff; border: 1px solid #e3e3e8; font-size: 13px; font-weight: 700; color: #03863f;">BLOG</span>
+</div>
+<h3 style="margin: 0; font-size: 21px; line-height: 1.45; font-weight: 700; letter-spacing: -0.02em;">우동3구역 입주권 투자, 관리처분 전후가 세금을 결정합니다</h3>
+<div style="font-size: 14px; color: #6e6e73;">이지훈 세무사 · 네이버 블로그 · 2026.07.31</div>
+</a>
+
+<a href="https://blog.naver.com/notax_nolife/224363515281" class="c-card rv" style="display: flex; flex-direction: column; gap: 18px; color: #1d1d1f; text-decoration: none;">
+<div class="c-thumb" style="position: relative; height: 230px; border-radius: 20px; overflow: hidden; background: #f3efe6; display: flex; align-items: center; justify-content: center;">
+<img src="images/n4.jpg" alt="" style="height: 100%; width: auto; display: block;">
+
+
+
+</div>
+<div style="display: flex; flex-wrap: wrap; gap: 6px;">
+<span style="padding: 5px 12px; border-radius: 980px; background: #e8e8ed; font-size: 13px; font-weight: 500; color: #424245;">재개발·입주권</span>
+<span style="padding: 5px 12px; border-radius: 980px; background: #ffffff; border: 1px solid #e3e3e8; font-size: 13px; font-weight: 700; color: #03863f;">BLOG</span>
+</div>
+<h3 style="margin: 0; font-size: 21px; line-height: 1.45; font-weight: 700; letter-spacing: -0.02em;">우동3구역 재개발 증여, 언제 해야 세금을 가장 많이 아낄 수 있을까요?</h3>
+<div style="font-size: 14px; color: #6e6e73;">이지훈 세무사 · 네이버 블로그 · 2026.07.31</div>
+</a>
+
+<a href="https://blog.naver.com/notax_nolife/224362440837" class="c-card rv" style="display: flex; flex-direction: column; gap: 18px; color: #1d1d1f; text-decoration: none;">
+<div class="c-thumb" style="position: relative; height: 230px; border-radius: 20px; overflow: hidden; background: #c1d3e1; display: flex; align-items: center; justify-content: center;">
+<img src="images/n6.jpg" alt="" style="height: 100%; width: auto; display: block;">
+
+
+
+</div>
+<div style="display: flex; flex-wrap: wrap; gap: 6px;">
+<span style="padding: 5px 12px; border-radius: 980px; background: #e8e8ed; font-size: 13px; font-weight: 500; color: #424245;">부동산 세금</span>
+<span style="padding: 5px 12px; border-radius: 980px; background: #ffffff; border: 1px solid #e3e3e8; font-size: 13px; font-weight: 700; color: #03863f;">BLOG</span>
+</div>
+<h3 style="margin: 0; font-size: 21px; line-height: 1.45; font-weight: 700; letter-spacing: -0.02em;">저가양도, 부모님에게 집을 싸게 사도 세금이 안 나올까요?</h3>
+<div style="font-size: 14px; color: #6e6e73;">이지훈 세무사 · 네이버 블로그 · 2026.07.30</div>
+</a>
+
+<a href="https://www.youtube.com/watch?v=vXUCZ9R54Os" class="c-card rv" style="display: flex; flex-direction: column; gap: 18px; color: #1d1d1f; text-decoration: none;">
+<div class="c-thumb" style="position: relative; height: 230px; border-radius: 20px; overflow: hidden; background: #111111; display: flex; align-items: center; justify-content: center;">
+<img src="images/yt-exchange.jpg" alt="" style="width: 100%; height: 100%; object-fit: cover; display: block;">
+
+
+<span style="position: absolute; right: 14px; bottom: 14px; width: 48px; height: 34px; border-radius: 10px; background: rgba(255,0,0,0.94); display: flex; align-items: center; justify-content: center;"><svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5v14l11-7z" fill="#ffffff"></path></svg></span>
+</div>
+<div style="display: flex; flex-wrap: wrap; gap: 6px;">
+<span style="padding: 5px 12px; border-radius: 980px; background: #e8e8ed; font-size: 13px; font-weight: 500; color: #424245;">부동산 세금</span>
+<span style="padding: 5px 12px; border-radius: 980px; background: #ffffff; border: 1px solid #e3e3e8; font-size: 13px; font-weight: 700; color: #cc0000;">YOUTUBE</span>
+</div>
+<h3 style="margin: 0; font-size: 21px; line-height: 1.45; font-weight: 700; letter-spacing: -0.02em;">부동산 맞교환으로 6,000만원 절세하는 법</h3>
+<div style="font-size: 14px; color: #6e6e73;">이지훈 세무사 · 유튜브 · 2026.07.27</div>
+</a>
+
+<a href="https://www.youtube.com/watch?v=kfqPVx0dGEs" class="c-card rv" style="display: flex; flex-direction: column; gap: 18px; color: #1d1d1f; text-decoration: none;">
+<div class="c-thumb" style="position: relative; height: 230px; border-radius: 20px; overflow: hidden; background: #111827; display: flex; align-items: center; justify-content: center;">
+<img src="images/yt_kfqPVx0dGEs.jpg" alt="" style="width: 100%; height: 100%; object-fit: cover; display: block;">
+
+
+<span style="position: absolute; right: 14px; bottom: 14px; width: 48px; height: 34px; border-radius: 10px; background: rgba(255,0,0,0.94); display: flex; align-items: center; justify-content: center;"><svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5v14l11-7z" fill="#ffffff"></path></svg></span>
+</div>
+<div style="display: flex; flex-wrap: wrap; gap: 6px;">
+<span style="padding: 5px 12px; border-radius: 980px; background: #e8e8ed; font-size: 13px; font-weight: 500; color: #424245;">사업자·법인</span>
+<span style="padding: 5px 12px; border-radius: 980px; background: #ffffff; border: 1px solid #e3e3e8; font-size: 13px; font-weight: 700; color: #cc0000;">YOUTUBE</span>
+</div>
+<h3 style="margin: 0; font-size: 21px; line-height: 1.45; font-weight: 700; letter-spacing: -0.02em;">공동구매 중개하면 세금 어떻게 내야 할까?</h3>
+<div style="font-size: 14px; color: #6e6e73;">이지훈 세무사 · 유튜브 · 2026.07.14</div>
+</a>
+
+<a href="https://www.youtube.com/watch?v=3RTx1G7Li3E" class="c-card rv" style="display: flex; flex-direction: column; gap: 18px; color: #1d1d1f; text-decoration: none;">
+<div class="c-thumb" style="position: relative; height: 230px; border-radius: 20px; overflow: hidden; background: #111827; display: flex; align-items: center; justify-content: center;">
+<img src="images/yt_3RTx1G7Li3E.jpg" alt="" style="width: 100%; height: 100%; object-fit: cover; display: block;">
+
+
+<span style="position: absolute; right: 14px; bottom: 14px; width: 48px; height: 34px; border-radius: 10px; background: rgba(255,0,0,0.94); display: flex; align-items: center; justify-content: center;"><svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5v14l11-7z" fill="#ffffff"></path></svg></span>
+</div>
+<div style="display: flex; flex-wrap: wrap; gap: 6px;">
+<span style="padding: 5px 12px; border-radius: 980px; background: #e8e8ed; font-size: 13px; font-weight: 500; color: #424245;">사업자·법인</span>
+<span style="padding: 5px 12px; border-radius: 980px; background: #ffffff; border: 1px solid #e3e3e8; font-size: 13px; font-weight: 700; color: #cc0000;">YOUTUBE</span>
+</div>
+<h3 style="margin: 0; font-size: 21px; line-height: 1.45; font-weight: 700; letter-spacing: -0.02em;">유튜버 세금, 이 영상 하나로 세금 5년 동안 안 내도 됩니다</h3>
+<div style="font-size: 14px; color: #6e6e73;">이지훈 세무사 · 유튜브 · 2026.07.06</div>
+</a>
+
+<a href="https://www.youtube.com/watch?v=xuKEWB79zNA" class="c-card rv" style="display: flex; flex-direction: column; gap: 18px; color: #1d1d1f; text-decoration: none;">
+<div class="c-thumb" style="position: relative; height: 230px; border-radius: 20px; overflow: hidden; background: #111827; display: flex; align-items: center; justify-content: center;">
+<img src="images/yt_xuKEWB79zNA.jpg" alt="" style="width: 100%; height: 100%; object-fit: cover; display: block;">
+
+
+<span style="position: absolute; right: 14px; bottom: 14px; width: 48px; height: 34px; border-radius: 10px; background: rgba(255,0,0,0.94); display: flex; align-items: center; justify-content: center;"><svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5v14l11-7z" fill="#ffffff"></path></svg></span>
+</div>
+<div style="display: flex; flex-wrap: wrap; gap: 6px;">
+<span style="padding: 5px 12px; border-radius: 980px; background: #e8e8ed; font-size: 13px; font-weight: 500; color: #424245;">재개발·입주권</span>
+<span style="padding: 5px 12px; border-radius: 980px; background: #ffffff; border: 1px solid #e3e3e8; font-size: 13px; font-weight: 700; color: #cc0000;">YOUTUBE</span>
+</div>
+<h3 style="margin: 0; font-size: 21px; line-height: 1.45; font-weight: 700; letter-spacing: -0.02em;">분양권 매매, 잘못 팔았다가 세금 폭탄 맞습니다</h3>
+<div style="font-size: 14px; color: #6e6e73;">이지훈 세무사 · 유튜브 · 2026.06.28</div>
+</a>
+
+<a href="https://www.youtube.com/watch?v=wmNMxk-BlJ0" class="c-card rv" style="display: flex; flex-direction: column; gap: 18px; color: #1d1d1f; text-decoration: none;">
+<div class="c-thumb" style="position: relative; height: 230px; border-radius: 20px; overflow: hidden; background: #111111; display: flex; align-items: center; justify-content: center;">
+<img src="images/yt-ownership.jpg" alt="" style="width: 100%; height: 100%; object-fit: cover; display: block;">
+
+
+<span style="position: absolute; right: 14px; bottom: 14px; width: 48px; height: 34px; border-radius: 10px; background: rgba(255,0,0,0.94); display: flex; align-items: center; justify-content: center;"><svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5v14l11-7z" fill="#ffffff"></path></svg></span>
+</div>
+<div style="display: flex; flex-wrap: wrap; gap: 6px;">
+<span style="padding: 5px 12px; border-radius: 980px; background: #e8e8ed; font-size: 13px; font-weight: 500; color: #424245;">재개발·입주권</span>
+<span style="padding: 5px 12px; border-radius: 980px; background: #ffffff; border: 1px solid #e3e3e8; font-size: 13px; font-weight: 700; color: #cc0000;">YOUTUBE</span>
+</div>
+<h3 style="margin: 0; font-size: 21px; line-height: 1.45; font-weight: 700; letter-spacing: -0.02em;">분양권 당첨 후, 부부 공동명의가 유리할까요? 단독명의가 유리할까요?</h3>
+<div style="font-size: 14px; color: #6e6e73;">이지훈 세무사 · 유튜브 · 2026.06.27</div>
+</a>
+
+<a href="https://www.youtube.com/watch?v=QdjCm4Mz9x0" class="c-card rv" style="display: flex; flex-direction: column; gap: 18px; color: #1d1d1f; text-decoration: none;">
+<div class="c-thumb" style="position: relative; height: 230px; border-radius: 20px; overflow: hidden; background: #111827; display: flex; align-items: center; justify-content: center;">
+<img src="images/yt_QdjCm4Mz9x0.jpg" alt="" style="width: 100%; height: 100%; object-fit: cover; display: block;">
+
+
+<span style="position: absolute; right: 14px; bottom: 14px; width: 48px; height: 34px; border-radius: 10px; background: rgba(255,0,0,0.94); display: flex; align-items: center; justify-content: center;"><svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5v14l11-7z" fill="#ffffff"></path></svg></span>
+</div>
+<div style="display: flex; flex-wrap: wrap; gap: 6px;">
+<span style="padding: 5px 12px; border-radius: 980px; background: #e8e8ed; font-size: 13px; font-weight: 500; color: #424245;">사업자·법인</span>
+<span style="padding: 5px 12px; border-radius: 980px; background: #ffffff; border: 1px solid #e3e3e8; font-size: 13px; font-weight: 700; color: #cc0000;">YOUTUBE</span>
+</div>
+<h3 style="margin: 0; font-size: 21px; line-height: 1.45; font-weight: 700; letter-spacing: -0.02em;">온라인 쇼핑몰, 전자상거래 세금 이렇게 해야 줄어듭니다</h3>
+<div style="font-size: 14px; color: #6e6e73;">이지훈 세무사 · 유튜브 · 2026.06.18</div>
+</a>
+
+<a href="https://www.youtube.com/watch?v=oedATQbTUW0" class="c-card rv" style="display: flex; flex-direction: column; gap: 18px; color: #1d1d1f; text-decoration: none;">
+<div class="c-thumb" style="position: relative; height: 230px; border-radius: 20px; overflow: hidden; background: #111827; display: flex; align-items: center; justify-content: center;">
+<img src="images/yt_oedATQbTUW0.jpg" alt="" style="width: 100%; height: 100%; object-fit: cover; display: block;">
+
+
+<span style="position: absolute; right: 14px; bottom: 14px; width: 48px; height: 34px; border-radius: 10px; background: rgba(255,0,0,0.94); display: flex; align-items: center; justify-content: center;"><svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5v14l11-7z" fill="#ffffff"></path></svg></span>
+</div>
+<div style="display: flex; flex-wrap: wrap; gap: 6px;">
+<span style="padding: 5px 12px; border-radius: 980px; background: #e8e8ed; font-size: 13px; font-weight: 500; color: #424245;">사업자·법인</span>
+<span style="padding: 5px 12px; border-radius: 980px; background: #ffffff; border: 1px solid #e3e3e8; font-size: 13px; font-weight: 700; color: #cc0000;">YOUTUBE</span>
+</div>
+<h3 style="margin: 0; font-size: 21px; line-height: 1.45; font-weight: 700; letter-spacing: -0.02em;">에어비앤비 세금 (feat. 공유숙박업)</h3>
+<div style="font-size: 14px; color: #6e6e73;">이지훈 세무사 · 유튜브 · 2026.06.03</div>
+</a>
+
+<a href="https://www.youtube.com/watch?v=z0RldcIsUEA" class="c-card rv" style="display: flex; flex-direction: column; gap: 18px; color: #1d1d1f; text-decoration: none;">
+<div class="c-thumb" style="position: relative; height: 230px; border-radius: 20px; overflow: hidden; background: #111827; display: flex; align-items: center; justify-content: center;">
+<img src="images/yt_z0RldcIsUEA.jpg" alt="" style="width: 100%; height: 100%; object-fit: cover; display: block;">
+
+
+<span style="position: absolute; right: 14px; bottom: 14px; width: 48px; height: 34px; border-radius: 10px; background: rgba(255,0,0,0.94); display: flex; align-items: center; justify-content: center;"><svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5v14l11-7z" fill="#ffffff"></path></svg></span>
+</div>
+<div style="display: flex; flex-wrap: wrap; gap: 6px;">
+<span style="padding: 5px 12px; border-radius: 980px; background: #e8e8ed; font-size: 13px; font-weight: 500; color: #424245;">부동산 세금</span>
+<span style="padding: 5px 12px; border-radius: 980px; background: #ffffff; border: 1px solid #e3e3e8; font-size: 13px; font-weight: 700; color: #cc0000;">YOUTUBE</span>
+</div>
+<h3 style="margin: 0; font-size: 21px; line-height: 1.45; font-weight: 700; letter-spacing: -0.02em;">삼삼엠투 세금 총정리 (feat. 주택임대소득)</h3>
+<div style="font-size: 14px; color: #6e6e73;">이지훈 세무사 · 유튜브 · 2026.05.25</div>
+</a>
+
+<a href="https://www.youtube.com/watch?v=blPVOHUHtzY" class="c-card rv" style="display: flex; flex-direction: column; gap: 18px; color: #1d1d1f; text-decoration: none;">
+<div class="c-thumb" style="position: relative; height: 230px; border-radius: 20px; overflow: hidden; background: #111827; display: flex; align-items: center; justify-content: center;">
+
+
+<div style="width: 100%; height: 100%; box-sizing: border-box; padding: 26px 28px; display: flex; flex-direction: column; justify-content: space-between; color: #ffffff;"><div style="display: flex; align-items: center; gap: 8px; font-size: 12px; font-weight: 700; letter-spacing: 0.08em; color: rgba(255,255,255,0.72);"><img src="images/pado-logo-white.png" alt="" style="height: 26px; width: auto; display: block;">이지훈 세무사 · YOUTUBE</div><div style="font-size: 38px; line-height: 1.15; font-weight: 800; letter-spacing: -0.03em;">종합소득세</div></div>
+<span style="position: absolute; right: 14px; bottom: 14px; width: 48px; height: 34px; border-radius: 10px; background: rgba(255,0,0,0.94); display: flex; align-items: center; justify-content: center;"><svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5v14l11-7z" fill="#ffffff"></path></svg></span>
+</div>
+<div style="display: flex; flex-wrap: wrap; gap: 6px;">
+<span style="padding: 5px 12px; border-radius: 980px; background: #e8e8ed; font-size: 13px; font-weight: 500; color: #424245;">사업자·법인</span>
+<span style="padding: 5px 12px; border-radius: 980px; background: #ffffff; border: 1px solid #e3e3e8; font-size: 13px; font-weight: 700; color: #cc0000;">YOUTUBE</span>
+</div>
+<h3 style="margin: 0; font-size: 21px; line-height: 1.45; font-weight: 700; letter-spacing: -0.02em;">2025년 종합소득세, 이렇게 줄여보세요</h3>
+<div style="font-size: 14px; color: #6e6e73;">이지훈 세무사 · 유튜브 · 2026.05.07</div>
+</a>
+
+<a href="https://www.youtube.com/watch?v=uSRAEjMG2z0" class="c-card rv" style="display: flex; flex-direction: column; gap: 18px; color: #1d1d1f; text-decoration: none;">
+<div class="c-thumb" style="position: relative; height: 230px; border-radius: 20px; overflow: hidden; background: #111827; display: flex; align-items: center; justify-content: center;">
+<img src="images/yt_uSRAEjMG2z0.jpg" alt="" style="width: 100%; height: 100%; object-fit: cover; display: block;">
+
+
+<span style="position: absolute; right: 14px; bottom: 14px; width: 48px; height: 34px; border-radius: 10px; background: rgba(255,0,0,0.94); display: flex; align-items: center; justify-content: center;"><svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5v14l11-7z" fill="#ffffff"></path></svg></span>
+</div>
+<div style="display: flex; flex-wrap: wrap; gap: 6px;">
+<span style="padding: 5px 12px; border-radius: 980px; background: #e8e8ed; font-size: 13px; font-weight: 500; color: #424245;">부동산 세금</span>
+<span style="padding: 5px 12px; border-radius: 980px; background: #ffffff; border: 1px solid #e3e3e8; font-size: 13px; font-weight: 700; color: #cc0000;">YOUTUBE</span>
+</div>
+<h3 style="margin: 0; font-size: 21px; line-height: 1.45; font-weight: 700; letter-spacing: -0.02em;">부동산 저가 양도, 가족한테 집 싸게 파는 법</h3>
+<div style="font-size: 14px; color: #6e6e73;">이지훈 세무사 · 유튜브 · 2026.04.14</div>
+</a>
+
+<a href="https://www.youtube.com/watch?v=4lzzIlm_yAw" class="c-card rv" style="display: flex; flex-direction: column; gap: 18px; color: #1d1d1f; text-decoration: none;">
+<div class="c-thumb" style="position: relative; height: 230px; border-radius: 20px; overflow: hidden; background: #111827; display: flex; align-items: center; justify-content: center;">
+
+
+<div style="width: 100%; height: 100%; box-sizing: border-box; padding: 26px 28px; display: flex; flex-direction: column; justify-content: space-between; color: #ffffff;"><div style="display: flex; align-items: center; gap: 8px; font-size: 12px; font-weight: 700; letter-spacing: 0.08em; color: rgba(255,255,255,0.72);"><img src="images/pado-logo-white.png" alt="" style="height: 26px; width: auto; display: block;">이지훈 세무사 · YOUTUBE</div><div style="font-size: 38px; line-height: 1.15; font-weight: 800; letter-spacing: -0.03em;">사업자등록</div></div>
+<span style="position: absolute; right: 14px; bottom: 14px; width: 48px; height: 34px; border-radius: 10px; background: rgba(255,0,0,0.94); display: flex; align-items: center; justify-content: center;"><svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5v14l11-7z" fill="#ffffff"></path></svg></span>
+</div>
+<div style="display: flex; flex-wrap: wrap; gap: 6px;">
+<span style="padding: 5px 12px; border-radius: 980px; background: #e8e8ed; font-size: 13px; font-weight: 500; color: #424245;">사업자·법인</span>
+<span style="padding: 5px 12px; border-radius: 980px; background: #ffffff; border: 1px solid #e3e3e8; font-size: 13px; font-weight: 700; color: #cc0000;">YOUTUBE</span>
+</div>
+<h3 style="margin: 0; font-size: 21px; line-height: 1.45; font-weight: 700; letter-spacing: -0.02em;">사업자등록 어떻게 해요?</h3>
+<div style="font-size: 14px; color: #6e6e73;">이지훈 세무사 · 유튜브 · 2026.04.12</div>
+</a>
+
+<a href="https://www.youtube.com/watch?v=0DzCSum31AM" class="c-card rv" style="display: flex; flex-direction: column; gap: 18px; color: #1d1d1f; text-decoration: none;">
+<div class="c-thumb" style="position: relative; height: 230px; border-radius: 20px; overflow: hidden; background: #111827; display: flex; align-items: center; justify-content: center;">
+
+
+<div style="width: 100%; height: 100%; box-sizing: border-box; padding: 26px 28px; display: flex; flex-direction: column; justify-content: space-between; color: #ffffff;"><div style="display: flex; align-items: center; gap: 8px; font-size: 12px; font-weight: 700; letter-spacing: 0.08em; color: rgba(255,255,255,0.72);"><img src="images/pado-logo-white.png" alt="" style="height: 26px; width: auto; display: block;">이지훈 세무사 · YOUTUBE</div><div style="font-size: 38px; line-height: 1.15; font-weight: 800; letter-spacing: -0.03em;">상속 vs 증여</div></div>
+<span style="position: absolute; right: 14px; bottom: 14px; width: 48px; height: 34px; border-radius: 10px; background: rgba(255,0,0,0.94); display: flex; align-items: center; justify-content: center;"><svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5v14l11-7z" fill="#ffffff"></path></svg></span>
+</div>
+<div style="display: flex; flex-wrap: wrap; gap: 6px;">
+<span style="padding: 5px 12px; border-radius: 980px; background: #e8e8ed; font-size: 13px; font-weight: 500; color: #424245;">상속·증여</span>
+<span style="padding: 5px 12px; border-radius: 980px; background: #ffffff; border: 1px solid #e3e3e8; font-size: 13px; font-weight: 700; color: #cc0000;">YOUTUBE</span>
+</div>
+<h3 style="margin: 0; font-size: 21px; line-height: 1.45; font-weight: 700; letter-spacing: -0.02em;">상속이냐 증여냐 그것이 문제로다</h3>
+<div style="font-size: 14px; color: #6e6e73;">이지훈 세무사 · 유튜브 · 2026.04.07</div>
+</a>
+
+<a href="https://www.youtube.com/watch?v=vO3c3nZNBSA" class="c-card rv" style="display: flex; flex-direction: column; gap: 18px; color: #1d1d1f; text-decoration: none;">
+<div class="c-thumb" style="position: relative; height: 230px; border-radius: 20px; overflow: hidden; background: #111827; display: flex; align-items: center; justify-content: center;">
+
+
+<div style="width: 100%; height: 100%; box-sizing: border-box; padding: 26px 28px; display: flex; flex-direction: column; justify-content: space-between; color: #ffffff;"><div style="display: flex; align-items: center; gap: 8px; font-size: 12px; font-weight: 700; letter-spacing: 0.08em; color: rgba(255,255,255,0.72);"><img src="images/pado-logo-white.png" alt="" style="height: 26px; width: auto; display: block;">이지훈 세무사 · YOUTUBE</div><div style="font-size: 38px; line-height: 1.15; font-weight: 800; letter-spacing: -0.03em;">프리랜서</div></div>
+<span style="position: absolute; right: 14px; bottom: 14px; width: 48px; height: 34px; border-radius: 10px; background: rgba(255,0,0,0.94); display: flex; align-items: center; justify-content: center;"><svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5v14l11-7z" fill="#ffffff"></path></svg></span>
+</div>
+<div style="display: flex; flex-wrap: wrap; gap: 6px;">
+<span style="padding: 5px 12px; border-radius: 980px; background: #e8e8ed; font-size: 13px; font-weight: 500; color: #424245;">사업자·법인</span>
+<span style="padding: 5px 12px; border-radius: 980px; background: #ffffff; border: 1px solid #e3e3e8; font-size: 13px; font-weight: 700; color: #cc0000;">YOUTUBE</span>
+</div>
+<h3 style="margin: 0; font-size: 21px; line-height: 1.45; font-weight: 700; letter-spacing: -0.02em;">프리랜서 세금 줄이는 법</h3>
+<div style="font-size: 14px; color: #6e6e73;">이지훈 세무사 · 유튜브 · 2026.04.05</div>
+</a>
+
+<a href="https://www.youtube.com/watch?v=5oxo-WxIoqU" class="c-card rv" style="display: flex; flex-direction: column; gap: 18px; color: #1d1d1f; text-decoration: none;">
+<div class="c-thumb" style="position: relative; height: 230px; border-radius: 20px; overflow: hidden; background: #111827; display: flex; align-items: center; justify-content: center;">
+
+
+<div style="width: 100%; height: 100%; box-sizing: border-box; padding: 26px 28px; display: flex; flex-direction: column; justify-content: space-between; color: #ffffff;"><div style="display: flex; align-items: center; gap: 8px; font-size: 12px; font-weight: 700; letter-spacing: 0.08em; color: rgba(255,255,255,0.72);"><img src="images/pado-logo-white.png" alt="" style="height: 26px; width: auto; display: block;">이지훈 세무사 · YOUTUBE</div><div style="font-size: 38px; line-height: 1.15; font-weight: 800; letter-spacing: -0.03em;">가족 간 시가</div></div>
+<span style="position: absolute; right: 14px; bottom: 14px; width: 48px; height: 34px; border-radius: 10px; background: rgba(255,0,0,0.94); display: flex; align-items: center; justify-content: center;"><svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5v14l11-7z" fill="#ffffff"></path></svg></span>
+</div>
+<div style="display: flex; flex-wrap: wrap; gap: 6px;">
+<span style="padding: 5px 12px; border-radius: 980px; background: #e8e8ed; font-size: 13px; font-weight: 500; color: #424245;">부동산 세금</span>
+<span style="padding: 5px 12px; border-radius: 980px; background: #ffffff; border: 1px solid #e3e3e8; font-size: 13px; font-weight: 700; color: #cc0000;">YOUTUBE</span>
+</div>
+<h3 style="margin: 0; font-size: 21px; line-height: 1.45; font-weight: 700; letter-spacing: -0.02em;">부동산 시가, 가족한테 얼마에 팔아야 할까</h3>
+<div style="font-size: 14px; color: #6e6e73;">이지훈 세무사 · 유튜브 · 2026.03.31</div>
+</a>
+
+<a href="https://www.youtube.com/watch?v=1ad9TzPUFdQ" class="c-card rv" style="display: flex; flex-direction: column; gap: 18px; color: #1d1d1f; text-decoration: none;">
+<div class="c-thumb" style="position: relative; height: 230px; border-radius: 20px; overflow: hidden; background: #111827; display: flex; align-items: center; justify-content: center;">
+
+
+<div style="width: 100%; height: 100%; box-sizing: border-box; padding: 26px 28px; display: flex; flex-direction: column; justify-content: space-between; color: #ffffff;"><div style="display: flex; align-items: center; gap: 8px; font-size: 12px; font-weight: 700; letter-spacing: 0.08em; color: rgba(255,255,255,0.72);"><img src="images/pado-logo-white.png" alt="" style="height: 26px; width: auto; display: block;">이지훈 세무사 · YOUTUBE</div><div style="font-size: 38px; line-height: 1.15; font-weight: 800; letter-spacing: -0.03em;">아이템매니아</div></div>
+<span style="position: absolute; right: 14px; bottom: 14px; width: 48px; height: 34px; border-radius: 10px; background: rgba(255,0,0,0.94); display: flex; align-items: center; justify-content: center;"><svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5v14l11-7z" fill="#ffffff"></path></svg></span>
+</div>
+<div style="display: flex; flex-wrap: wrap; gap: 6px;">
+<span style="padding: 5px 12px; border-radius: 980px; background: #e8e8ed; font-size: 13px; font-weight: 500; color: #424245;">사업자·법인</span>
+<span style="padding: 5px 12px; border-radius: 980px; background: #ffffff; border: 1px solid #e3e3e8; font-size: 13px; font-weight: 700; color: #cc0000;">YOUTUBE</span>
+</div>
+<h3 style="margin: 0; font-size: 21px; line-height: 1.45; font-weight: 700; letter-spacing: -0.02em;">아이템매니아 세금</h3>
+<div style="font-size: 14px; color: #6e6e73;">이지훈 세무사 · 유튜브 · 2026.03.29</div>
+</a>
+
+<a href="https://www.youtube.com/watch?v=F_z6fs-3rbA" class="c-card rv" style="display: flex; flex-direction: column; gap: 18px; color: #1d1d1f; text-decoration: none;">
+<div class="c-thumb" style="position: relative; height: 230px; border-radius: 20px; overflow: hidden; background: #111827; display: flex; align-items: center; justify-content: center;">
+
+
+<div style="width: 100%; height: 100%; box-sizing: border-box; padding: 26px 28px; display: flex; flex-direction: column; justify-content: space-between; color: #ffffff;"><div style="display: flex; align-items: center; gap: 8px; font-size: 12px; font-weight: 700; letter-spacing: 0.08em; color: rgba(255,255,255,0.72);"><img src="images/pado-logo-white.png" alt="" style="height: 26px; width: auto; display: block;">이지훈 세무사 · YOUTUBE</div><div style="font-size: 38px; line-height: 1.15; font-weight: 800; letter-spacing: -0.03em;">양도세 중과</div></div>
+<span style="position: absolute; right: 14px; bottom: 14px; width: 48px; height: 34px; border-radius: 10px; background: rgba(255,0,0,0.94); display: flex; align-items: center; justify-content: center;"><svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5v14l11-7z" fill="#ffffff"></path></svg></span>
+</div>
+<div style="display: flex; flex-wrap: wrap; gap: 6px;">
+<span style="padding: 5px 12px; border-radius: 980px; background: #e8e8ed; font-size: 13px; font-weight: 500; color: #424245;">부동산 세금</span>
+<span style="padding: 5px 12px; border-radius: 980px; background: #ffffff; border: 1px solid #e3e3e8; font-size: 13px; font-weight: 700; color: #cc0000;">YOUTUBE</span>
+</div>
+<h3 style="margin: 0; font-size: 21px; line-height: 1.45; font-weight: 700; letter-spacing: -0.02em;">양도세 중과, 이제 집 팔면 세금 두 배</h3>
+<div style="font-size: 14px; color: #6e6e73;">이지훈 세무사 · 유튜브 · 2026.03.24</div>
+</a>
+
+<a href="https://www.youtube.com/watch?v=wp8ke-n5--o" class="c-card rv" style="display: flex; flex-direction: column; gap: 18px; color: #1d1d1f; text-decoration: none;">
+<div class="c-thumb" style="position: relative; height: 230px; border-radius: 20px; overflow: hidden; background: #111827; display: flex; align-items: center; justify-content: center;">
+
+
+<div style="width: 100%; height: 100%; box-sizing: border-box; padding: 26px 28px; display: flex; flex-direction: column; justify-content: space-between; color: #ffffff;"><div style="display: flex; align-items: center; gap: 8px; font-size: 12px; font-weight: 700; letter-spacing: 0.08em; color: rgba(255,255,255,0.72);"><img src="images/pado-logo-white.png" alt="" style="height: 26px; width: auto; display: block;">이지훈 세무사 · YOUTUBE</div><div style="font-size: 38px; line-height: 1.15; font-weight: 800; letter-spacing: -0.03em;">창업감면</div></div>
+<span style="position: absolute; right: 14px; bottom: 14px; width: 48px; height: 34px; border-radius: 10px; background: rgba(255,0,0,0.94); display: flex; align-items: center; justify-content: center;"><svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5v14l11-7z" fill="#ffffff"></path></svg></span>
+</div>
+<div style="display: flex; flex-wrap: wrap; gap: 6px;">
+<span style="padding: 5px 12px; border-radius: 980px; background: #e8e8ed; font-size: 13px; font-weight: 500; color: #424245;">사업자·법인</span>
+<span style="padding: 5px 12px; border-radius: 980px; background: #ffffff; border: 1px solid #e3e3e8; font-size: 13px; font-weight: 700; color: #cc0000;">YOUTUBE</span>
+</div>
+<h3 style="margin: 0; font-size: 21px; line-height: 1.45; font-weight: 700; letter-spacing: -0.02em;">창업감면, 5년 동안 세금 안 내는 방법</h3>
+<div style="font-size: 14px; color: #6e6e73;">이지훈 세무사 · 유튜브 · 2026.03.23</div>
+</a>
+
+<a href="https://www.youtube.com/watch?v=PM-5KM5jC8Q" class="c-card rv" style="display: flex; flex-direction: column; gap: 18px; color: #1d1d1f; text-decoration: none;">
+<div class="c-thumb" style="position: relative; height: 230px; border-radius: 20px; overflow: hidden; background: #1c2c7a; display: flex; align-items: center; justify-content: center;">
+<img src="images/yt_PM-5KM5jC8Q.jpg" alt="" style="width: 100%; height: 100%; object-fit: cover; display: block;">
+
+
+<span style="position: absolute; right: 14px; bottom: 14px; width: 48px; height: 34px; border-radius: 10px; background: rgba(255,0,0,0.94); display: flex; align-items: center; justify-content: center;"><svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5v14l11-7z" fill="#ffffff"></path></svg></span>
+</div>
+<div style="display: flex; flex-wrap: wrap; gap: 6px;">
+<span style="padding: 5px 12px; border-radius: 980px; background: #e8e8ed; font-size: 13px; font-weight: 500; color: #424245;">부동산 세금</span>
+<span style="padding: 5px 12px; border-radius: 980px; background: #ffffff; border: 1px solid #e3e3e8; font-size: 13px; font-weight: 700; color: #cc0000;">YOUTUBE</span>
+</div>
+<h3 style="margin: 0; font-size: 21px; line-height: 1.45; font-weight: 700; letter-spacing: -0.02em;">임대주택, 다주택자 이렇게 바뀝니다</h3>
+<div style="font-size: 14px; color: #6e6e73;">파도세무회계 · 유튜브 · 2026.03.17</div>
+</a>
+
+<a href="https://www.youtube.com/watch?v=pjSZE_-ZIys" class="c-card rv" style="display: flex; flex-direction: column; gap: 18px; color: #1d1d1f; text-decoration: none;">
+<div class="c-thumb" style="position: relative; height: 230px; border-radius: 20px; overflow: hidden; background: #1c2c7a; display: flex; align-items: center; justify-content: center;">
+<img src="images/yt_pjSZE_-ZIys.jpg" alt="" style="width: 100%; height: 100%; object-fit: cover; display: block;">
+
+
+<span style="position: absolute; right: 14px; bottom: 14px; width: 48px; height: 34px; border-radius: 10px; background: rgba(255,0,0,0.94); display: flex; align-items: center; justify-content: center;"><svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5v14l11-7z" fill="#ffffff"></path></svg></span>
+</div>
+<div style="display: flex; flex-wrap: wrap; gap: 6px;">
+<span style="padding: 5px 12px; border-radius: 980px; background: #e8e8ed; font-size: 13px; font-weight: 500; color: #424245;">부동산 세금</span>
+<span style="padding: 5px 12px; border-radius: 980px; background: #ffffff; border: 1px solid #e3e3e8; font-size: 13px; font-weight: 700; color: #cc0000;">YOUTUBE</span>
+</div>
+<h3 style="margin: 0; font-size: 21px; line-height: 1.45; font-weight: 700; letter-spacing: -0.02em;">다주택자 양도세 중과 피할 수 있습니다!</h3>
+<div style="font-size: 14px; color: #6e6e73;">파도세무회계 · 유튜브 · 2026.03.12</div>
+</a>
+
+<a href="https://www.youtube.com/watch?v=Yxo9YsizfmQ" class="c-card rv" style="display: flex; flex-direction: column; gap: 18px; color: #1d1d1f; text-decoration: none;">
+<div class="c-thumb" style="position: relative; height: 230px; border-radius: 20px; overflow: hidden; background: #1c2c7a; display: flex; align-items: center; justify-content: center;">
+<img src="images/yt_Yxo9YsizfmQ.jpg" alt="" style="width: 100%; height: 100%; object-fit: cover; display: block;">
+
+
+<span style="position: absolute; right: 14px; bottom: 14px; width: 48px; height: 34px; border-radius: 10px; background: rgba(255,0,0,0.94); display: flex; align-items: center; justify-content: center;"><svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5v14l11-7z" fill="#ffffff"></path></svg></span>
+</div>
+<div style="display: flex; flex-wrap: wrap; gap: 6px;">
+<span style="padding: 5px 12px; border-radius: 980px; background: #e8e8ed; font-size: 13px; font-weight: 500; color: #424245;">부동산 세금</span>
+<span style="padding: 5px 12px; border-radius: 980px; background: #ffffff; border: 1px solid #e3e3e8; font-size: 13px; font-weight: 700; color: #cc0000;">YOUTUBE</span>
+</div>
+<h3 style="margin: 0; font-size: 21px; line-height: 1.45; font-weight: 700; letter-spacing: -0.02em;">양도세 중과 대상인지 궁금하지 않으세요?</h3>
+<div style="font-size: 14px; color: #6e6e73;">파도세무회계 · 유튜브 · 2026.03.11</div>
+</a>
+
+<a href="https://www.youtube.com/watch?v=5YFvsPgWvmU" class="c-card rv" style="display: flex; flex-direction: column; gap: 18px; color: #1d1d1f; text-decoration: none;">
+<div class="c-thumb" style="position: relative; height: 230px; border-radius: 20px; overflow: hidden; background: #1c2c7a; display: flex; align-items: center; justify-content: center;">
+<img src="images/yt_5YFvsPgWvmU.jpg" alt="" style="width: 100%; height: 100%; object-fit: cover; display: block;">
+
+
+<span style="position: absolute; right: 14px; bottom: 14px; width: 48px; height: 34px; border-radius: 10px; background: rgba(255,0,0,0.94); display: flex; align-items: center; justify-content: center;"><svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5v14l11-7z" fill="#ffffff"></path></svg></span>
+</div>
+<div style="display: flex; flex-wrap: wrap; gap: 6px;">
+<span style="padding: 5px 12px; border-radius: 980px; background: #e8e8ed; font-size: 13px; font-weight: 500; color: #424245;">부동산 세금</span>
+<span style="padding: 5px 12px; border-radius: 980px; background: #ffffff; border: 1px solid #e3e3e8; font-size: 13px; font-weight: 700; color: #cc0000;">YOUTUBE</span>
+</div>
+<h3 style="margin: 0; font-size: 21px; line-height: 1.45; font-weight: 700; letter-spacing: -0.02em;">다주택자 양도세 중과 다시 시작됩니다</h3>
+<div style="font-size: 14px; color: #6e6e73;">파도세무회계 · 유튜브 · 2026.03.08</div>
+</a>
+
+<a href="https://www.youtube.com/watch?v=zmwgz1HSrnA" class="c-card rv" style="display: flex; flex-direction: column; gap: 18px; color: #1d1d1f; text-decoration: none;">
+<div class="c-thumb" style="position: relative; height: 230px; border-radius: 20px; overflow: hidden; background: #111111; display: flex; align-items: center; justify-content: center;">
+<img src="images/yt-zmwgz1HSrnA.jpg" alt="" style="width: 100%; height: 100%; object-fit: cover; display: block;">
+
+
+<span style="position: absolute; right: 14px; bottom: 14px; width: 48px; height: 34px; border-radius: 10px; background: rgba(255,0,0,0.94); display: flex; align-items: center; justify-content: center;"><svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5v14l11-7z" fill="#ffffff"></path></svg></span>
+</div>
+<div style="display: flex; flex-wrap: wrap; gap: 6px;">
+<span style="padding: 5px 12px; border-radius: 980px; background: #e8e8ed; font-size: 13px; font-weight: 500; color: #424245;">부동산 세금</span>
+<span style="padding: 5px 12px; border-radius: 980px; background: #ffffff; border: 1px solid #e3e3e8; font-size: 13px; font-weight: 700; color: #cc0000;">YOUTUBE</span>
+</div>
+<h3 style="margin: 0; font-size: 21px; line-height: 1.45; font-weight: 700; letter-spacing: -0.02em;">5억 세금 → 1억? 부자들의 부동산 절세 비법. 가족 간 교환!!</h3>
+<div style="font-size: 14px; color: #6e6e73;">파도세무회계 · 유튜브 · 2025.12.01</div>
+</a>
+
+<a href="https://www.youtube.com/watch?v=7BjGv-aLXtU" class="c-card rv" style="display: flex; flex-direction: column; gap: 18px; color: #1d1d1f; text-decoration: none;">
+<div class="c-thumb" style="position: relative; height: 230px; border-radius: 20px; overflow: hidden; background: #111111; display: flex; align-items: center; justify-content: center;">
+<img src="images/yt-gift.jpg" alt="" style="width: 100%; height: 100%; object-fit: cover; display: block;">
+
+
+<span style="position: absolute; right: 14px; bottom: 14px; width: 48px; height: 34px; border-radius: 10px; background: rgba(255,0,0,0.94); display: flex; align-items: center; justify-content: center;"><svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5v14l11-7z" fill="#ffffff"></path></svg></span>
+</div>
+<div style="display: flex; flex-wrap: wrap; gap: 6px;">
+<span style="padding: 5px 12px; border-radius: 980px; background: #e8e8ed; font-size: 13px; font-weight: 500; color: #424245;">상속·증여</span>
+<span style="padding: 5px 12px; border-radius: 980px; background: #ffffff; border: 1px solid #e3e3e8; font-size: 13px; font-weight: 700; color: #cc0000;">YOUTUBE</span>
+</div>
+<h3 style="margin: 0; font-size: 21px; line-height: 1.45; font-weight: 700; letter-spacing: -0.02em;">부동산 증여 세금 크게 줄이는 합법적인 두 가지 방법!!</h3>
+<div style="font-size: 14px; color: #6e6e73;">파도세무회계 · 유튜브 · 2025.11.24</div>
+</a>
+
+<a href="https://www.youtube.com/watch?v=b14Mmr91IK0" class="c-card rv" style="display: flex; flex-direction: column; gap: 18px; color: #1d1d1f; text-decoration: none;">
+<div class="c-thumb" style="position: relative; height: 230px; border-radius: 20px; overflow: hidden; background: #1c2c7a; display: flex; align-items: center; justify-content: center;">
+<img src="images/yt_b14Mmr91IK0.jpg" alt="" style="width: 100%; height: 100%; object-fit: cover; display: block;">
+
+
+<span style="position: absolute; right: 14px; bottom: 14px; width: 48px; height: 34px; border-radius: 10px; background: rgba(255,0,0,0.94); display: flex; align-items: center; justify-content: center;"><svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5v14l11-7z" fill="#ffffff"></path></svg></span>
+</div>
+<div style="display: flex; flex-wrap: wrap; gap: 6px;">
+<span style="padding: 5px 12px; border-radius: 980px; background: #e8e8ed; font-size: 13px; font-weight: 500; color: #424245;">상속·증여</span>
+<span style="padding: 5px 12px; border-radius: 980px; background: #ffffff; border: 1px solid #e3e3e8; font-size: 13px; font-weight: 700; color: #cc0000;">YOUTUBE</span>
+</div>
+<h3 style="margin: 0; font-size: 21px; line-height: 1.45; font-weight: 700; letter-spacing: -0.02em;">타이밍 놓치면 끝입니다! 지방 부동산 전략과 증여 타이밍!!</h3>
+<div style="font-size: 14px; color: #6e6e73;">파도세무회계 · 유튜브 · 2025.11.17</div>
+</a>
+
+<a href="https://www.youtube.com/watch?v=AFhCGtYMOwA" class="c-card rv" style="display: flex; flex-direction: column; gap: 18px; color: #1d1d1f; text-decoration: none;">
+<div class="c-thumb" style="position: relative; height: 230px; border-radius: 20px; overflow: hidden; background: #1c2c7a; display: flex; align-items: center; justify-content: center;">
+<img src="images/yt_AFhCGtYMOwA.jpg" alt="" style="width: 100%; height: 100%; object-fit: cover; display: block;">
+
+
+<span style="position: absolute; right: 14px; bottom: 14px; width: 48px; height: 34px; border-radius: 10px; background: rgba(255,0,0,0.94); display: flex; align-items: center; justify-content: center;"><svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5v14l11-7z" fill="#ffffff"></path></svg></span>
+</div>
+<div style="display: flex; flex-wrap: wrap; gap: 6px;">
+<span style="padding: 5px 12px; border-radius: 980px; background: #e8e8ed; font-size: 13px; font-weight: 500; color: #424245;">부동산 세금</span>
+<span style="padding: 5px 12px; border-radius: 980px; background: #ffffff; border: 1px solid #e3e3e8; font-size: 13px; font-weight: 700; color: #cc0000;">YOUTUBE</span>
+</div>
+<h3 style="margin: 0; font-size: 21px; line-height: 1.45; font-weight: 700; letter-spacing: -0.02em;">2억 절세 vs 6억 폭탄!! 조정대상지역, 토지거래허가구역 완전 분석</h3>
+<div style="font-size: 14px; color: #6e6e73;">파도세무회계 · 유튜브 · 2025.11.10</div>
+</a>
+
+<a href="https://blog.naver.com/notax_nolife/224369892004" class="c-card rv" style="display: flex; flex-direction: column; gap: 18px; color: #1d1d1f; text-decoration: none;">
+<div class="c-thumb" style="position: relative; height: 230px; border-radius: 20px; overflow: hidden; background: #293d63; display: flex; align-items: center; justify-content: center;">
+<img src="images/b-gwangan.jpg" alt="" style="height: 100%; width: auto; display: block;">
+
+
+
+</div>
+<div style="display: flex; flex-wrap: wrap; gap: 6px;">
+<span style="padding: 5px 12px; border-radius: 980px; background: #e8e8ed; font-size: 13px; font-weight: 500; color: #424245;">재개발·입주권</span>
+<span style="padding: 5px 12px; border-radius: 980px; background: #ffffff; border: 1px solid #e3e3e8; font-size: 13px; font-weight: 700; color: #03863f;">BLOG</span>
+</div>
+<h3 style="margin: 0; font-size: 21px; line-height: 1.45; font-weight: 700; letter-spacing: -0.02em;">광안9구역 재개발, 현재 사업단계와 양도세·증여세 절세전략 총정리</h3>
+<div style="font-size: 14px; color: #6e6e73;">이지훈 세무사 · 네이버 블로그</div>
+</a>
+
+<a href="https://blog.naver.com/vtwlu302/224056732969" class="c-card rv" style="display: flex; flex-direction: column; gap: 18px; color: #1d1d1f; text-decoration: none;">
+<div class="c-thumb" style="position: relative; height: 230px; border-radius: 20px; overflow: hidden; background: #293d63; display: flex; align-items: center; justify-content: center;">
+<img src="images/blog-gift.jpg" alt="" style="height: 100%; width: auto; display: block;">
+
+
+
+</div>
+<div style="display: flex; flex-wrap: wrap; gap: 6px;">
+<span style="padding: 5px 12px; border-radius: 980px; background: #e8e8ed; font-size: 13px; font-weight: 500; color: #424245;">상속·증여</span>
+<span style="padding: 5px 12px; border-radius: 980px; background: #ffffff; border: 1px solid #e3e3e8; font-size: 13px; font-weight: 700; color: #03863f;">BLOG</span>
+</div>
+<h3 style="margin: 0; font-size: 21px; line-height: 1.45; font-weight: 700; letter-spacing: -0.02em;">부담부증여, 부동산 어떻게 증여받아야 유리할까?</h3>
+<div style="font-size: 14px; color: #6e6e73;">신창언 세무사 · 네이버 블로그</div>
+</a>
+
+<a href="https://blog.naver.com/vtwlu302/224411554507" class="c-card rv" style="display: flex; flex-direction: column; gap: 18px; color: #1d1d1f; text-decoration: none;">
+<div class="c-thumb" style="position: relative; height: 230px; border-radius: 20px; overflow: hidden; background: #c2b8b1; display: flex; align-items: center; justify-content: center;">
+<img src="images/blog-youth.jpg" alt="" style="height: 100%; width: auto; display: block;">
+
+
+
+</div>
+<div style="display: flex; flex-wrap: wrap; gap: 6px;">
+<span style="padding: 5px 12px; border-radius: 980px; background: #e8e8ed; font-size: 13px; font-weight: 500; color: #424245;">사업자·법인</span>
+<span style="padding: 5px 12px; border-radius: 980px; background: #ffffff; border: 1px solid #e3e3e8; font-size: 13px; font-weight: 700; color: #03863f;">BLOG</span>
+</div>
+<h3 style="margin: 0; font-size: 21px; line-height: 1.45; font-weight: 700; letter-spacing: -0.02em;">청년창업세액감면, 2~3년 전 받은 감면세액 다시 토해낼 수도 있습니다</h3>
+<div style="font-size: 14px; color: #6e6e73;">신창언 세무사 · 네이버 블로그</div>
+</a>
+
+<a href="https://blog.naver.com/notax_nolife/224419402050" class="c-card rv" style="display: flex; flex-direction: column; gap: 18px; color: #1d1d1f; text-decoration: none;">
+<div class="c-thumb" style="position: relative; height: 230px; border-radius: 20px; overflow: hidden; background: #c1d3e1; display: flex; align-items: center; justify-content: center;">
+<img src="images/blog-nonresident.jpg" alt="" style="height: 100%; width: auto; display: block;">
+
+
+
+</div>
+<div style="display: flex; flex-wrap: wrap; gap: 6px;">
+<span style="padding: 5px 12px; border-radius: 980px; background: #e8e8ed; font-size: 13px; font-weight: 500; color: #424245;">비거주자</span>
+<span style="padding: 5px 12px; border-radius: 980px; background: #ffffff; border: 1px solid #e3e3e8; font-size: 13px; font-weight: 700; color: #03863f;">BLOG</span>
+</div>
+<h3 style="margin: 0; font-size: 21px; line-height: 1.45; font-weight: 700; letter-spacing: -0.02em;">재외국민 양도세, 비거주자도 1세대 1주택 비과세 받을 수 있을까?</h3>
+<div style="font-size: 14px; color: #6e6e73;">이지훈 세무사 · 네이버 블로그</div>
+</a>
+
+<a href="https://blog.naver.com/notax_nolife/224339059374" class="c-card rv" style="display: flex; flex-direction: column; gap: 18px; color: #1d1d1f; text-decoration: none;">
+<div class="c-thumb" style="position: relative; height: 230px; border-radius: 20px; overflow: hidden; background: #3b71a0; display: flex; align-items: center; justify-content: center;">
+<img src="images/blog-ipjugwon.jpg" alt="" style="height: 100%; width: auto; display: block;">
+
+
+
+</div>
+<div style="display: flex; flex-wrap: wrap; gap: 6px;">
+<span style="padding: 5px 12px; border-radius: 980px; background: #e8e8ed; font-size: 13px; font-weight: 500; color: #424245;">재개발·입주권</span>
+<span style="padding: 5px 12px; border-radius: 980px; background: #ffffff; border: 1px solid #e3e3e8; font-size: 13px; font-weight: 700; color: #03863f;">BLOG</span>
+</div>
+<h3 style="margin: 0; font-size: 21px; line-height: 1.45; font-weight: 700; letter-spacing: -0.02em;">실전사례 — 입주권 증여</h3>
+<div style="font-size: 14px; color: #6e6e73;">이지훈 세무사 · 네이버 블로그</div>
+</a>
+
+</div>
+
+<div style="margin-top: 72px; display: flex; justify-content: center; gap: 12px;">
+<a href="https://blog.naver.com/vtwlu302" style="height: 50px; padding: 0 24px; border-radius: 980px; background: #ffffff; border: 1px solid #d2d2d7; color: #1d1d1f; font-size: 15px; font-weight: 500; display: flex; align-items: center; gap: 8px; text-decoration: none;"><span style="width: 8px; height: 8px; border-radius: 50%; background: #03c75a;"></span>신창언 세무사 블로그</a>
+<a href="https://blog.naver.com/notax_nolife" style="height: 50px; padding: 0 24px; border-radius: 980px; background: #ffffff; border: 1px solid #d2d2d7; color: #1d1d1f; font-size: 15px; font-weight: 500; display: flex; align-items: center; gap: 8px; text-decoration: none;"><span style="width: 8px; height: 8px; border-radius: 50%; background: #03c75a;"></span>이지훈 세무사 블로그</a>
+<a href="https://www.youtube.com/@pado_tax" style="height: 50px; padding: 0 24px; border-radius: 980px; background: #ffffff; border: 1px solid #d2d2d7; color: #1d1d1f; font-size: 15px; font-weight: 500; display: flex; align-items: center; gap: 8px; text-decoration: none;"><span style="width: 8px; height: 8px; border-radius: 50%; background: #ff0000;"></span>파도세무회계 유튜브</a>
+</div>
+</section>
+
+<!-- FOOTER -->
+<footer style="flex-grow: 1; padding: 32px 120px 48px; background: #f5f5f7; border-top: 1px solid #d2d2d7; display: flex; flex-direction: column; gap: 20px; font-size: 12px; line-height: 1.7; color: #6e6e73;">
+<div style="display: flex; justify-content: space-between; align-items: center;">
+<div style="display: flex; gap: 24px;">
+<a href="index.html" style="color: #424245;">사무소 소개</a>
+<a href="services.html" style="color: #424245;">업무 분야</a>
+<a href="index.html" style="color: #424245;">구성원 소개</a>
+<a href="index.html" style="color: #424245;">상담 신청</a>
+<a href="index.html" style="color: #1d1d1f; font-weight: 700;">개인정보처리방침</a>
+</div>
+<div style="display: flex; gap: 16px;">
+<a href="https://blog.naver.com/PostList.naver?blogId=notax_nolife" style="color: #424245;">네이버 블로그</a>
+<a href="https://pf.kakao.com/_xkUFFn" style="color: #424245;">카카오톡 채널</a>
+<a href="https://www.youtube.com/@pado_tax" style="color: #424245;">유튜브</a>
+<a href="https://www.instagram.com/notax_nolife" style="color: #424245;">인스타그램</a>
+</div>
+</div>
+<div style="padding-top: 24px; border-top: 1px solid #d2d2d7; display: flex; gap: 32px; align-items: center;">
+<img src="images/pado-logo.png" alt="PADO 파도세무회계" style="height: 84px; width: auto; display: block;">
+<div>
+<div>파도세무회계 | 대표자 : 신창언, 이지훈 | 사업자등록번호 : 833-25-01979</div>
+<div>부산 강서구 명지국제8로10번길 38 플러스시네마 309호 | 전화번호 : 0507-1303-7392 | 이메일 : padotax5961@naver.com</div>
+<div style="margin-top: 8px;">Copyright © 2025 파도세무회계. All rights reserved.</div>
+</div>
+</div>
+</footer>
+</div>
+<script>
+(function () {
+  var els = document.querySelectorAll('.rv');
+  if (!('IntersectionObserver' in window)) return;
+  els.forEach(function (el) { el.classList.remove('rv-in'); el.style.opacity = ''; el.style.transform = ''; });
+  document.querySelectorAll('.rv').forEach(function (el) { el.style.opacity = '0'; });
+  var io = new IntersectionObserver(function (entries, o) {
+    entries.forEach(function (e) {
+      if (e.isIntersecting) { e.target.style.opacity = ''; e.target.classList.add('rv-in'); o.unobserve(e.target); }
+    });
+  }, { threshold: 0.12, rootMargin: '0px 0px -8% 0px' });
+  els.forEach(function (el) { io.observe(el); });
+})();
+</script>
+</body>
+</html>
